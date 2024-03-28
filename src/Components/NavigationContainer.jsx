@@ -8,9 +8,12 @@ function NavigationContainer() {
   return (
     
     <Container className="topNav">
-        <Container className=" nav leftNav"></Container>
         <h1 className="siteName">SN Service</h1>
-        <Container className="nav rightNav"></Container>
+        <Container className="nav rightNav">
+          <Container className="linkDiv"><h3>Info</h3></Container>
+          <Container className="linkDiv"><h3>Kontakt</h3></Container>
+          <Container className="linkDiv"><h3>Lokacija</h3></Container>
+        </Container>
     </Container>
   )
 }

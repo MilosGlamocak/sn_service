@@ -1,7 +1,7 @@
 .topNav {
     background-color: black;
     max-width: 100% !important;
-    height: 6rem;
+    height: 5rem;
 
     display: flex !important;
     flex-direction: row;
@@ -22,4 +22,27 @@
     background-color: black;
     max-width: 35% !important;
     margin: 0 !important;
+
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.linkDiv {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: rgb(155, 155, 155);
+
+    transition-duration: 0.4s;
+}
+
+.linkDiv:hover {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    cursor: pointer;
 }
