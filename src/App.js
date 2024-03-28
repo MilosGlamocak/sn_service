@@ -1,10 +1,14 @@
 
+import { Container } from '@mui/material';
 import './App.css';
 import NavigationContainer from './Components/NavigationContainer';
 
 function App() {
   return (
-    <NavigationContainer />
+    <Container className='container'>
+      <NavigationContainer />
+    </Container>
+    
   );
 }
 
