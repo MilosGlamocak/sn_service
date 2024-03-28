@@ -3,7 +3,7 @@
     max-width: 100% !important;
     height: 5rem;
     position: fixed;
-    z-index: 999;
+    z-index: 999 !important;
 
     display: flex !important;
     flex-direction: row;

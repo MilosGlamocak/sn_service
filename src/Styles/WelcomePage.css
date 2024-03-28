@@ -13,30 +13,26 @@
 .welcomeContainer {
     color: white;
     max-width: 100% !important;
+    position: absolute !important;
     height: 90vh;
-    padding: 5rem 0 0 0 !important;
+    margin: 5rem 0 0 0 !important;
+    padding-bottom: 5rem;
+    z-index: 998;
+    opacity: 1 !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
 .welcomeHeader {
-    position: absolute !important;
-    left: 50%;
-    text-align: center;
-    top: 30%;
-    transform: translate(-50%, -50%);
-    opacity: 1 !important;
-    z-index: 998;
     font-size: 4rem
 }
 
 .welcomeText {
-    position: absolute !important;
-    text-align: center;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
-    opacity: 1 !important;
-    z-index: 998;
-    font-size: 1.7rem
+    font-size: 1.7rem;
+    max-width: 50%;
 }
 
 .scrollButton {
@@ -51,7 +47,7 @@
     transform: translate(-50%, -50%);
     border-radius: 50% !important;
     animation: upDown 1500ms infinite forwards linear;
-    z-index: 999;
+    z-index: 997;
 }
 
 .scrollButton:hover {
