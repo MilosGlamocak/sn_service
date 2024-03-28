@@ -59,9 +59,10 @@
     0% {
         transform: translate(-50%, -50%)
     } 50% {
-        transform: translate(-50%, -62%)
+        transform: translate(-50%, -60%);
     } 100% {
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
+        width: 5rem;
     }
 }
 
