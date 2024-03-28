@@ -1,7 +1,7 @@
 .welcomeContainer {
     background-image: url(../Images/Remenje.jpg);
     max-width: 100% !important;
-    height: 100vh;
+    height: 90vh;
     background-size: cover;
     background-repeat: none !important;
     opacity: 0.3;
