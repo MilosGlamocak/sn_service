@@ -1,12 +1,15 @@
 import { Container } from "@mui/material";
 import React from "react";
+import '../Styles/NavigationContainer.css'
 
 
 
 function NavigationContainer() {
   return (
     
-    <Container style={{height: '80px', backgroundColor: 'red', width: '100%'}}></Container>
+    <Container className="topNav">
+        <h1 className="siteName">SN Service</h1>
+    </Container>
   )
 }
 
