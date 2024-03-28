@@ -12,7 +12,7 @@
 
 .welcomeContainer {
     color: white;
-    max-width: 100% !important;
+    max-width: 70% !important;
     position: absolute !important;
     height: 90vh;
     margin: 5rem 0 0 0 !important;
@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    animation: leftRight 300ms ease-in-out forwards;
+    animation: leftRight 350ms ease-in-out forwards;
 }
 
 .welcomeHeader {
@@ -33,7 +33,7 @@
 
 .welcomeText {
     font-size: 1.7rem;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .scrollButton {
@@ -82,12 +82,17 @@
 }
 
 @keyframes leftRight {
-    from {
+    0% {
         left: -100%;
-        
-    } to {
+        transform: translate(-50%);
+        opacity: 0; 
+    } 93% {
+        left: 54%;
+        transform: translate(-50%);
+    } 100% {
         left: 50%;
         transform: translate(-50%);
+        opacity: 1;
     }
 }
 
