@@ -3,7 +3,7 @@
     max-width: 100% !important;
     height: 90vh;
     background-size: cover;
-    background-repeat: none !important;
+    background-repeat: no-repeat !important;
     opacity: 0.3;
 }
 
@@ -18,6 +18,37 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50% !important;
-
+    animation: upDown 1500ms infinite forwards linear;
 }
+
+.scrollButton:hover {
+    animation: rotate360 200ms forwards linear;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translate(-50%, -50%)
+    } 50% {
+        transform: translate(-50%, -62%)
+    } 100% {
+        transform: translate(-50%, -50%)
+    }
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotateZ(0deg) translate(-50%, -50%);
+        transform-origin: 0% 0%;
+        scale: 1;
+    } 100% {
+        transform: rotateZ(-360deg) translate(-50%, -50%);
+        transform-origin: 0% 0%;
+        scale: 1.1;
+    }
+}
+
+.arrowIcon {
+    scale: 1.3;
+}
+
 
