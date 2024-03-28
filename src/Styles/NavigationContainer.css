@@ -2,6 +2,8 @@
     background-color: black;
     max-width: 100% !important;
     height: 5rem;
+    position: fixed;
+    z-index: 999;
 
     display: flex !important;
     flex-direction: row;
@@ -13,8 +15,9 @@
 
 .siteName {
     font-size: 2.5rem;
-    width: 30%;
-    text-align: center;
+
+    text-align: left;
+    padding: 2rem;
 }
 
 .nav {

@@ -1,0 +1,23 @@
+.welcomeContainer {
+    background-image: url(../Images/Remenje.jpg);
+    max-width: 100% !important;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none !important;
+    opacity: 0.3;
+}
+
+.scrollButton {
+    background-color: white !important;
+    color: black !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    width: 5rem;
+    height: 5rem;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50% !important;
+
+}
+
