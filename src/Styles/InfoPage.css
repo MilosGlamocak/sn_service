@@ -1,6 +1,45 @@
 .infoContainer {
     max-width: 100% !important;
     height: 100vh;
-    background-color: rgb(49, 49, 49);
     z-index: 997;
+    display: flex !important;
+    align-items: center;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0 !important;
+    gap: 0;
+}
+
+.infoIconText {
+    max-width: 30%;
+    height: 100%;
+    color: white;
+    font-size: 1.7rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding: 6rem 0 6rem 0;
+}
+
+.infoIcons {
+    display: flex !important;
+    max-width: 20%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding: 5rem 0 5rem 0;
+}
+
+.infoMechanics {
+    background-color: rgb(16, 16, 63);
+    max-width: 50%;
+    height: 100%;
+    margin-top: 50%;
+}
+
+.infoIcon {
+    width: 7rem;
+    height: 7rem;
+    color: white;
 }
