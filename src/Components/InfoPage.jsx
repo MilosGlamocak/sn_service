@@ -14,6 +14,7 @@ function InfoPage() {
         value: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, repellendus.'
     }]
 return (
+    <>
     <Container className="infoContainer">
         
         <Container className="infoIcons">
@@ -23,12 +24,16 @@ return (
             <BoltIcon className="infoIcon boltIcon" />
         </Container>
         <Container className="infoIconText">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></Container>
-        <Container className="infoMechanics"></Container>
+            <p>Redovni servisi</p>
+            <p>Tuning</p>
+            <p>Mehanicki kvarovi</p>
+            <p>Autoelektrika</p>
+        </Container>
+        <Container style={{maxWidth:'50%'}} /*ovo je samo jer justify content ne radi u infoContaineru*//>
     </Container>
+    <Container className="infoMechanics"></Container>
+    </>
+    
 )
 }
 
