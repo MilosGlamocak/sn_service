@@ -1,5 +1,5 @@
 .infoContainer {
-    max-width: 100% !important;
+    max-width: 100vw !important;
     height: 100vh;
     z-index: 997;
     display: flex !important;
@@ -11,35 +11,47 @@
 }
 
 .infoIconText {
-    max-width: 30%;
+    max-width: 30% !important;
     height: 100%;
     color: white;
-    font-size: 1.7rem;
+    display: flex !important;
     flex-direction: column;
-    align-items: center;
-    justify-content: baseline;
-    padding: 6rem 0 6rem 0;
+    font-size: 1.6rem;
+    align-items: center !important;
+    justify-content: center;
+    padding: 4rem 0 8rem 0;
+    gap: 7rem;
+    
+
 }
 
 .infoIcons {
     display: flex !important;
-    max-width: 20%;
+    max-width: 20% !important;
     height: 100%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: baseline;
-    padding: 5rem 0 5rem 0;
+    padding: 10rem 0 10rem 0;
+    gap: 10rem;
 }
 
 .infoMechanics {
     background-color: rgb(16, 16, 63);
-    max-width: 50%;
+    max-width: 50% !important;
     height: 100%;
-    margin-top: 50%;
+    margin-top: 70%;
 }
 
 .infoIcon {
-    width: 7rem;
-    height: 7rem;
+    scale: 5;
     color: white;
+    margin-right: 2rem;
+}
+
+.buildIcon {
+    scale: 3.8;
+}
+
+.boltIcon {
 }
