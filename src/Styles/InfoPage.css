@@ -2,9 +2,5 @@
     max-width: 100% !important;
     height: 100vh;
     background-color: rgb(49, 49, 49);
-    position: absolute !important;
-    z-index: 996;
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 997;
 }
