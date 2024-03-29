@@ -31,7 +31,11 @@ return (
         </Container>
         <Container style={{maxWidth:'50%'}} /*ovo je samo jer justify content ne radi u infoContaineru*//>
     </Container>
-    <Container className="infoMechanics"></Container>
+    <Container className="infoMechanics">
+        <Container className="mechanicText"></Container>
+        <Container className="mechanicImg"></Container>
+        
+    </Container>
     </>
     
 )
