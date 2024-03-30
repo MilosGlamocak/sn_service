@@ -23,6 +23,7 @@ return (
           <Grid item xs={1} sm={1} md={7} key={index} >
             <Container className='infoDiv'>
                 <CarRepairIcon className="infoIcon carRepairIcon"/>
+                <p className="infoIconText">Redovni servisi</p>
             </Container>
           </Grid>
         ))}
