@@ -1,7 +1,7 @@
 .infoContainer {
     max-width: 100% !important;
     height: 100vh;
-    z-index: 997;
+    z-index: 995;
     display: flex !important;
     align-items: center;
     flex-direction: row;
@@ -17,6 +17,10 @@
     font-size: 1.7rem;
     font-weight: 500;
 }
+
+/*.infoContainer:hover, .cardBorder {
+    opacity: 1 !important;
+}*/
 
 .infoIcons {
     display: flex !important;
@@ -34,7 +38,8 @@
     padding-bottom: 5rem;
 }
 
-.infoDiv {
+
+.card {
     height: 18rem;
     display: flex !important;
     align-items: center;
@@ -43,18 +48,12 @@
     border-radius: 10px;
     padding: 0 !important;
     gap: 2rem;
-    background-color: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     position: relative;
 }
 
-.infoDiv::before {
+.card::before, .cardBorder {
     border-radius: inherit;
-    background: radial-gradient(
-        800px circle at var(--mouse-x) var(--mouse-y),
-        rgba(255,255,255, 0.06),
-        transparent 40%
-    );
     content: "";
     height: 100%;
     left: 0px;
@@ -62,12 +61,45 @@
     top: 0px;
     width: 100%;
     z-index: 997;
-    transition: opacity 500ms;
+    transition: opacity 300ms;
     opacity: 0;
 }
 
-.infoDiv:hover::before {
+.card::before {
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255,255,255, 0.06),
+        transparent 40%
+    );
+    z-index: 998;
+}
+
+.cardBorder {
+    background: radial-gradient(
+        400px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255,255,255, 0.3),
+        transparent 40%
+    );
+    z-index:996;
+}
+
+.card:hover::before, .card:hover > .cardBorder{
     opacity: 1;
+}
+
+.cardContent {
+    height: 17.7rem;
+    max-width: 98% !important;
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 !important;
+    gap: 2rem;
+    border-radius: inherit;
+    background-color: rgb(7, 7, 7);
+    z-index: 997;
 }
 
 .infoIcon {

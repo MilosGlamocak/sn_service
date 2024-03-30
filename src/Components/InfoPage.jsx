@@ -32,7 +32,7 @@ return (
         {Array.from(Array(6)).map((_, index) => (
             <Grid item xs={1} sm={1} md={7} key={index}>
                 <Container
-                    className='infoDiv'
+                    className='card'
                     onMouseMove={(e) => handleOnMouseMove(index, e)}
                         style={
                         hoveredCard && hoveredCard.index === index ? {
@@ -42,8 +42,12 @@ return (
                         : {}
                     }
                     >
-                        <CarRepairIcon className="infoIcon carRepairIcon"/>
-                        <p className="infoIconText">Redovni servisi</p>
+                        <Container className="cardBorder"></Container>
+                        <Container className="cardContent">
+                            <CarRepairIcon className="infoIcon carRepairIcon"/>
+                            <p className="infoIconText">Redovni servisi</p>
+                        </Container>
+                        
                 </Container>
             </Grid>
             ))}
