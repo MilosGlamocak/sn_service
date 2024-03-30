@@ -1,6 +1,6 @@
 import React from "react"
 import '../Styles/InfoPage.css'
-import { Container } from "@mui/material"
+import { Container, Grid, item } from "@mui/material"
 import CarRepairIcon from '@mui/icons-material/CarRepair';
 import BuildIcon from '@mui/icons-material/Build';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
@@ -16,8 +16,30 @@ function InfoPage() {
 return (
     <>
     <Container className="infoContainer">
-        
-        <Container className="infoIcons">
+    <Grid container columns={{ xs: 3, sm: 2, md: 40 }}
+    columnGap={{xs: 0, sm: 0, md: 20}}
+    rowGap={{xs: 2, md: 8}} style={{backgroundColor: 'gray', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
+        {Array.from(Array(6)).map((_, index) => (
+          <Grid item xs={1} sm={1} md={7} key={index} >
+            <Container className='infoDiv'>
+                <CarRepairIcon className="infoIcon carRepairIcon"/>
+            </Container>
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
+    <Container className="infoMechanics">
+        <Container className="mechanicText"></Container>
+        <Container className="mechanicImg"></Container>
+    </Container>
+    </>
+    
+)
+}
+
+export default InfoPage
+
+/**<Container className="infoIcons">
             <CarRepairIcon className="infoIcon carRepairIcon"/>
             <BuildIcon className="infoIcon buildIcon"/>
             <MiscellaneousServicesIcon className="infoIcon miscIcon" />
@@ -29,16 +51,4 @@ return (
             <p>Mehanicki kvarovi</p>
             <p>Autoelektrika</p>
         </Container>
-        <Container style={{maxWidth:'50%'}} /*ovo je samo jer justify content ne radi u infoContaineru*//>
-    </Container>
-    <Container className="infoMechanics">
-        <Container className="mechanicText"></Container>
-        <Container className="mechanicImg"></Container>
-        
-    </Container>
-    </>
-    
-)
-}
-
-export default InfoPage
+        <Container style={{maxWidth:'50%'}} /*ovo je samo jer justify content ne radi u infoContaineru/> */
