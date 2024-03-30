@@ -17,8 +17,8 @@ return (
     <>
     <Container className="infoContainer">
     <Grid container columns={{ xs: 3, sm: 2, md: 40 }}
-    columnGap={{xs: 0, sm: 0, md: 20}}
-    rowGap={{xs: 2, md: 8}} style={{backgroundColor: 'gray', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
+    columnGap={{xs: 0, sm: 0, md: 35}}
+    rowGap={{xs: 1, md: 8}} className="infoGrid">
         {Array.from(Array(6)).map((_, index) => (
           <Grid item xs={1} sm={1} md={7} key={index} >
             <Container className='infoDiv'>
