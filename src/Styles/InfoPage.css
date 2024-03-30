@@ -45,6 +45,30 @@
     gap: 2rem;
     background-color: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.infoDiv::before {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 997;
+    transition-duration: 0.5s;
+    opacity: 0;
+
+}
+
+.infoDiv:hover::before {
+    opacity: 1;
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255,255,255, 0.06),
+        transparent 40%
+    );
 }
 
 .infoIcon {
