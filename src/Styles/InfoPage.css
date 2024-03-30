@@ -50,6 +50,11 @@
 
 .infoDiv::before {
     border-radius: inherit;
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255,255,255, 0.06),
+        transparent 40%
+    );
     content: "";
     height: 100%;
     left: 0px;
@@ -57,18 +62,12 @@
     top: 0px;
     width: 100%;
     z-index: 997;
-    transition-duration: 0.5s;
+    transition: opacity 500ms;
     opacity: 0;
-
 }
 
 .infoDiv:hover::before {
     opacity: 1;
-    background: radial-gradient(
-        800px circle at var(--mouse-x) var(--mouse-y),
-        rgba(255,255,255, 0.06),
-        transparent 40%
-    );
 }
 
 .infoIcon {
