@@ -54,7 +54,8 @@ return (
         </Grid>
     </Container>
     <Container className="infoMechanics">
-        {/* Add your other components here */}
+        <Container className="mechanicText"></Container>
+        <Container className="mechanicImg"></Container>
     </Container>
 </>
 );
