@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import '../Styles/InfoPage.css'
 import { Container, Grid, item } from "@mui/material"
 import CarRepairIcon from '@mui/icons-material/CarRepair';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import { FaOilCan } from "react-icons/fa";
 import BuildIcon from '@mui/icons-material/Build';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import BoltIcon from '@mui/icons-material/Bolt';
@@ -19,17 +21,25 @@ function InfoPage() {
         setHoveredCard({ index, x, y });
     };
 
+    const cards = [
+        { text: 'Ulje i filteri', icon: <FaOilCan className="infoIcon faOilCanIcon"/> },
+        { text: 'Veliki servis', icon: <CarRepairIcon className="infoIcon carRepairIcon"/> },
+        { text: 'Autodijagnostika', icon: <BoltIcon className="infoIcon boltIcon"/> },
+        { text: 'Kočioni sistem', icon: <img src={require('../Images/disc-brake-128.png')} alt="Disk Brake" className="infoIcon discBrakeIcon"/> },
+      ];
+
 return (
 <>
     <Container className="infoContainer">
+        <p className="ponudaHeader">Iz ponude izdvajamo:</p>
         <Grid
             container
-            columns={{ xs: 3, sm: 2, md: 40 }}
+            columns={{ xs: 2, sm: 2, md: 20 }}
             columnGap={{xs: 0, sm: 0, md: 24}}
             rowGap={{xs: 1, md: 8}}
             className="infoGrid"
         >
-        {Array.from(Array(6)).map((_, index) => (
+        {cards.map((field, index) => (
             <Grid item xs={1} sm={1} md={7} key={index}>
                 <Container
                     className='card'
@@ -44,8 +54,8 @@ return (
                     >
                         <Container className="cardBorder"></Container>
                         <Container className="cardContent">
-                            <CarRepairIcon className="infoIcon carRepairIcon"/>
-                            <p className="infoIconText">Redovni servisi</p>
+                            {field.icon}
+                            <p className="infoIconText">{field.text}</p>
                         </Container>
                         
                 </Container>

@@ -9,13 +9,22 @@
     gap: 0;
 }
 
+.ponudaHeader {
+    color: white;
+    position: absolute;
+    top: 2%;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
 .infoIconText {
     text-align: center;
     color: white;
     display: flex !important;
     flex-direction: column;
-    font-size: 1.7rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-wrap: wrap;
 }
 
 /*.infoContainer:hover, .cardBorder {
@@ -47,7 +56,6 @@
     flex-direction: column;
     border-radius: 10px;
     padding: 0 !important;
-    gap: 2rem;
     background-color: rgba(255, 255, 255, 0.05);
     position: relative;
 }
@@ -89,14 +97,14 @@
 
 .cardContent {
     height: 17.7rem;
-    max-width: 98% !important;
+    max-width: 99% !important;
     position: relative;
     display: flex !important;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0 !important;
-    gap: 2rem;
+    gap: 3rem;
     border-radius: inherit;
     background-color: rgb(7, 7, 7);
     z-index: 997;
@@ -109,6 +117,13 @@
 
 .buildIcon {
     scale: 3.8;
+}
+
+.discBrakeIcon {
+    scale: 0.7;
+    margin-bottom: -2.5rem;
+    margin-top: -2.5rem;
+    filter: invert();
 }
 
 .infoMechanics {
