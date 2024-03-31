@@ -54,7 +54,7 @@ return (
                     >
                         <Container className="cardBorder"></Container>
                         <Container className={`cardContent ${field.class}`}>
-                            {field.icon}
+                        {field.icon}
                             <p className="infoIconText">{field.text}</p>
                         </Container>
                         
