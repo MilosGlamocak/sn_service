@@ -22,10 +22,10 @@ function InfoPage() {
     };
 
     const cards = [
-        { text: 'Ulje i filteri', icon: <FaOilCan className="infoIcon faOilCanIcon"/> },
-        { text: 'Veliki servis', icon: <CarRepairIcon className="infoIcon carRepairIcon"/> },
-        { text: 'Autodijagnostika', icon: <BoltIcon className="infoIcon boltIcon"/> },
-        { text: 'Kočioni sistem', icon: <img src={require('../Images/disc-brake-128.png')} alt="Disk Brake" className="infoIcon discBrakeIcon"/> },
+        { text: 'Ulje i filteri', icon: <FaOilCan className="infoIcon faOilCanIcon"/>, class: 'oil' },
+        { text: 'Veliki servis', icon: <CarRepairIcon className="infoIcon carRepairIcon"/>, class: 'bigService' },
+        { text: 'Autodijagnostika', icon: <BoltIcon className="infoIcon boltIcon"/>, class: 'diagnostics' },
+        { text: 'Kočioni sistem', icon: <img src={require('../Images/disc-brake-128.png')} alt="Disk Brake" className="infoIcon discBrakeIcon"/>, class: 'brakes' },
       ];
 
 return (
@@ -53,7 +53,7 @@ return (
                     }
                     >
                         <Container className="cardBorder"></Container>
-                        <Container className="cardContent">
+                        <Container className={`cardContent ${field.class}`}>
                             {field.icon}
                             <p className="infoIconText">{field.text}</p>
                         </Container>
@@ -62,10 +62,6 @@ return (
             </Grid>
             ))}
         </Grid>
-    </Container>
-    <Container className="infoMechanics">
-        <Container className="mechanicText"></Container>
-        <Container className="mechanicImg"></Container>
     </Container>
 </>
 );

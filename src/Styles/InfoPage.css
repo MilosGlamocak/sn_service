@@ -44,7 +44,7 @@
 
 .infoGrid {
     justify-content: center;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -74,25 +74,27 @@
 }
 
 .card::before {
-    background: radial-gradient(
+    /*background: radial-gradient(
         800px circle at var(--mouse-x) var(--mouse-y),
-        rgba(255,255,255, 0.06),
+        rgba(255,255,255, 0.01),
         transparent 40%
     );
-    z-index: 998;
+    z-index: 998;*/
 }
 
 .cardBorder {
     background: radial-gradient(
         400px circle at var(--mouse-x) var(--mouse-y),
-        rgba(255,255,255, 0.3),
-        transparent 40%
+        rgba(255,255,255, 1),
+        transparent 100%
     );
     z-index:996;
+    
 }
 
 .card:hover::before, .card:hover > .cardBorder{
     opacity: 1;
+    transition-duration: 2s;
 }
 
 .cardContent {
@@ -106,8 +108,20 @@
     padding: 0 !important;
     gap: 3rem;
     border-radius: inherit;
-    background-color: rgb(7, 7, 7);
+    /*background-color: rgb(7, 7, 7);*/
     z-index: 997;
+}
+
+.oil {
+    background-image: url(../Images/Remenje.jpg);
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    opacity: 0.3;
+    transition-duration: 1s;
+}
+
+.oil:hover {
+    opacity: 1 !important;
 }
 
 .infoIcon {
@@ -126,23 +140,4 @@
     filter: invert();
 }
 
-.infoMechanics {
-    background-color: rgb(16, 16, 63);
-    max-width: 100% !important;
-    height: 100vh;
-    display: flex !important;
-    padding: 0 !important;
-}
-
-.mechanicImg {
-    max-width: 50%;
-    background-color: purple;
-    height: 100%;
-}
-
-.mechanicText {
-    max-width: 50%;
-    background-color: gray;
-    height: 100%;
-}
 
