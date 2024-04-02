@@ -1,0 +1,13 @@
+.componentContainer {
+    max-width: 100% !important;
+    height: 200vh;
+    position: absolute !important;
+    z-index: 996;
+    top: 200%;
+    transform: translate(0, -50%);
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}

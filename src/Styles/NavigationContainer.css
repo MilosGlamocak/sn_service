@@ -11,6 +11,7 @@
     justify-content: space-between;
     color: white;
     padding: 0 !important;
+    gap: 1rem;
 }
 
 .siteName {
