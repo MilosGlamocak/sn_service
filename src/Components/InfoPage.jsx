@@ -9,6 +9,7 @@ import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices
 import BoltIcon from '@mui/icons-material/Bolt';
 
 
+
 function InfoPage() {
     const [hoveredCard, setHoveredCard] = useState(null);
 
@@ -21,11 +22,13 @@ function InfoPage() {
         setHoveredCard({ index, x, y });
     };
 
+
+
     const cards = [
-        { text: 'Ulje i filteri', icon: <FaOilCan className="infoIcon faOilCanIcon"/>, class: 'oil' },
-        { text: 'Veliki servis', icon: <CarRepairIcon className="infoIcon carRepairIcon"/>, class: 'bigService' },
-        { text: 'Autodijagnostika', icon: <BoltIcon className="infoIcon boltIcon"/>, class: 'diagnostics' },
-        { text: 'Kočioni sistem', icon: <img src={require('../Images/disc-brake-128.png')} alt="Disk Brake" className="infoIcon discBrakeIcon"/>, class: 'brakes' },
+        { text: 'Zamjena ulja i filtera', icon: <FaOilCan className="infoIcon faOilCanIcon"/>, class: 'oil', background: 'https://images.unsplash.com/photo-1642075223291-f9ec545889fa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+        { text: 'Veliki servis', icon: <CarRepairIcon className="infoIcon carRepairIcon"/>, class: 'bigService', background: `https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D` },
+        { text: 'Autodijagnostika', icon: <BoltIcon className="infoIcon boltIcon"/>, class: 'diagnostics', background: `https://images.unsplash.com/photo-1584202756061-a01bb5f601cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D` },
+        { text: 'Kočioni sistem', icon: <img src={require('../Images/disc-brake-128.png')} alt="Disk Brake" className="infoIcon discBrakeIcon"/>, class: 'brakes', background: `https://images.unsplash.com/photo-1696494561430-de087dd0bd69?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D` },
       ];
 
 return (
@@ -57,6 +60,8 @@ return (
                         {field.icon}
                             <p className="infoIconText">{field.text}</p>
                         </Container>
+                        <Container className="cardBg" style={{ backgroundImage: `url(${field.background})` }}></Container>
+
                         
                 </Container>
             </Grid>
