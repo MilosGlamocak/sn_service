@@ -73,14 +73,14 @@
     opacity: 0;
 }
 
-.card::before {
-    /*background: radial-gradient(
+/*.card::before {
+    background: radial-gradient(
         800px circle at var(--mouse-x) var(--mouse-y),
         rgba(255,255,255, 0.01),
         transparent 40%
     );
-    z-index: 998;*/
-}
+    z-index: 998;
+}*/
 
 .cardBorder {
     background: radial-gradient(

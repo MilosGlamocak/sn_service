@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useRef, useState } from "react"
 import '../Styles/InfoPage.css'
 import { Container, Grid, item } from "@mui/material"
 import CarRepairIcon from '@mui/icons-material/CarRepair';
@@ -21,7 +21,6 @@ function InfoPage() {
 
         setHoveredCard({ index, x, y });
     };
-
 
 
     const cards = [
