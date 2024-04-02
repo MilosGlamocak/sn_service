@@ -85,7 +85,7 @@
 .cardBorder {
     background: radial-gradient(
         400px circle at var(--mouse-x) var(--mouse-y),
-        rgba(255,255,255, 1),
+        rgba(255,255,255, 0.5),
         transparent 100%
     );
     z-index:995;
@@ -107,7 +107,7 @@
     padding: 0 !important;
     gap: 3rem;
     border-radius: inherit;
-    /*background-color: rgb(7, 7, 7);*/
+    
     z-index: 997;
     transition-duration: 0.5s;
 }
@@ -120,16 +120,25 @@
     position: absolute;
     background-position: 0, 35%;
     background-size: cover;
-    opacity: 0.1;
-    transition-duration: 2s;
+    opacity: 0.2;
+    transition-duration: 1s;
+    filter: grayscale(60%);
 }
 
 .card:hover > .cardBg {
-    opacity: 0.98 !important;
+    opacity: 0.9 !important;
+    filter: grayscale(0%);
 }
 
 .card:hover > .cardContent {
     opacity: 0;
+    scale: 1.15;
+    text-shadow: 3px 3px 5px rgba(0,0,0,1) !important;
+    font-weight: 700 !important;
+}
+
+.card:hover > .infoIconText {
+    
 }
 
 .infoIcon {
