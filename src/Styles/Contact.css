@@ -1,55 +1,13 @@
-.infoContainer {
+.contactContainer {
     max-width: 100% !important;
     height: 100vh;
-    z-index: 995;
     display: flex !important;
     align-items: center;
-    flex-direction: row;
-    justify-content:center;
-    gap: 0;
-}
-
-.ponudaHeader {
-    color: white;
-    position: absolute;
-    top: 2%;
-    font-size: 1.7rem;
-    font-weight: 500;
-}
-
-.infoIconText {
-    text-align: center;
-    color: white;
-    display: flex !important;
-    flex-direction: column;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-wrap: wrap;
-}
-
-/*.infoContainer:hover, .cardBorder {
-    opacity: 1 !important;
-}*/
-
-.infoIcons {
-    display: flex !important;
-    max-width: 20% !important;
-    height: 100%;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: baseline;
-    padding: 10rem 0 10rem 0;
-    gap: 10rem;
-}
-
-.infoGrid {
     justify-content: center;
-    padding-bottom: 2rem;
 }
 
-
-.card {
-    height: 18rem;
+.form {
+    height: 70%;
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -60,7 +18,7 @@
     position: relative;
 }
 
-.card::before, .cardBorder {
+.form::before, .formBorder {
     border-radius: inherit;
     content: "";
     height: 100%;
@@ -73,7 +31,7 @@
     opacity: 0;
 }
 
-/*.card::before {
+/*.form::before {
     background: radial-gradient(
         800px circle at var(--mouse-x) var(--mouse-y),
         rgba(255,255,255, 0.01),
@@ -82,7 +40,7 @@
     z-index: 998;
 }*/
 
-.cardBorder {
+.formBorder {
     background: radial-gradient(
         400px circle at var(--mouse-x) var(--mouse-y),
         rgba(255,255,255, 0.5),
@@ -91,14 +49,15 @@
     z-index:995;
     
 }
-.card:hover::before, .card:hover > .cardBorder, .cardBg{
+
+.form:hover::before, .form:hover > .formBorder, .formBg{
     opacity: 1;
     transition-duration: 3s;
 }
 
-.cardContent {
-    height: calc(100% - 0.2rem);
-    max-width: calc(100% - 0.2rem) !important;
+.formContent {
+    height: calc(100% - 0.3rem);
+    max-width: calc(100% - 0.3rem) !important;
     position: relative;
     display: flex !important;
     align-items: center;
@@ -107,12 +66,13 @@
     padding: 0 !important;
     gap: 3rem;
     border-radius: inherit;
+    background-color: black;
     
     z-index: 997;
     transition-duration: 0.5s;
 }
 
-.cardBg {
+.formBg {
     height: calc(100% - 0.2rem);
     max-width: calc(100% - 0.2rem) !important;
     border-radius: inherit;
@@ -125,32 +85,9 @@
     filter: grayscale(60%);
 }
 
-.card:hover > .cardBg {
+.form:hover > .formBg {
     opacity: 0.9 !important;
     filter: grayscale(0%);
-}
-
-.card:hover > .cardContent {
-    opacity: 0;
-    scale: 1.15;
-    text-shadow: 3px 3px 5px rgba(0,0,0,1) !important;
-    font-weight: 700 !important;
-}
-
-.infoIcon {
-    scale: 3;
-    color: white;
-}
-
-.buildIcon {
-    scale: 3.8;
-}
-
-.discBrakeIcon {
-    scale: 0.7;
-    margin-bottom: -2.5rem;
-    margin-top: -2.5rem;
-    filter: invert();
 }
 
 
