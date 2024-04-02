@@ -33,7 +33,7 @@ function InfoPage() {
 return (
 <>
     <Container className="infoContainer">
-        <p className="ponudaHeader">Iz ponude izdvajamo:</p>
+        <p className="ponudaHeader">U servisu vršimo usluge:</p>
         <Grid
             container
             columns={{ xs: 2, sm: 2, md: 20 }}
