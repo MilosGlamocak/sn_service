@@ -25,7 +25,7 @@ function Contact() {
 
     const inputFields = [
         {label: 'Vaš email:', className: 'textField emailInput', rows: 1},
-        {label: 'Poruka:', className: 'textField MessageInput', rows: 4}, 
+        {label: 'Poruka:', className: 'textField MessageInput', rows: 6}, 
     ]
 
 
@@ -33,41 +33,44 @@ function Contact() {
         <Container className='contactContainer'>
             <h2 className='contactHeader'>Kontaktirajte nas!</h2>
             <Container
-                    className='form'
-                    onMouseMove={(e) => handleOnMouseMove( e)}
-                        style={
-                        hoveredCard ? {
-                            "--mouse-x": `${hoveredCard.x}px`,
-                            "--mouse-y": `${hoveredCard.y}px`
-                        }
-                        : {}
-                    }
-                    >
-                        <Container className="formBorder"></Container>
-                        <Container className={`formContent`}>
-                            {inputFields.map((field) => {
-                                return (
-                            <TextField className={field.className} variant='filled' label={field.label}
-                            multiline
-                            rows={field.rows}
+            className='form'
+            onMouseMove={(e) => handleOnMouseMove( e)}
+                style={
+                hoveredCard ? {
+                    "--mouse-x": `${hoveredCard.x}px`,
+                    "--mouse-y": `${hoveredCard.y}px`
+                }
+                : {}
+            }
+            >
+                <Container className='formContent'>
+                <Container className='leftSide'></Container>
+            <Container className='rightSide'>
+            <Container className={`formContentRight`}>
+                {inputFields.map((field) => {
+                    return (
+                <TextField className={field.className} variant='filled' label={field.label}
+                multiline
+                rows={field.rows}
 
-                            InputLabelProps={{
-                                sx: {
-                                  color: "white",
-                                  [`&.${inputLabelClasses.shrink}`]: {
-                                    // set the color of the label when shrinked (usually when the TextField is focused)
-                                    color: "white"
-                                  }}}}
-                                  
-                            />
-                            )
-                            })}
-                            <SendIcon className={`${clicked ? 'clicked' : 'sendIcon'}`} onClick={handleSendEmail}/>
-                            
-                            
-                        </Container>
-
+                InputLabelProps={{
+                    sx: {
+                        color: "white",
+                        [`&.${inputLabelClasses.shrink}`]: {
+                        // set the color of the label when shrinked (usually when the TextField is focused)
+                        color: "white"
+                        }}}}
                         
+                />
+                )
+                })}
+                <SendIcon className={`${clicked ? 'clicked' : 'sendIcon'}`} onClick={handleSendEmail}/>
+                </Container>
+            </Container>
+                </Container>
+            
+                <Container className="formBorder"></Container>
+                
                 </Container>
         </Container>
     )

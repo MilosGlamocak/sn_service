@@ -11,7 +11,7 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     border-radius: 10px;
     padding: 0 !important;
     background-color: rgba(255, 255, 255, 0.01);
@@ -55,7 +55,7 @@
     transition-duration: 2s;
 }
 
-.formContent {
+.formContentRight {
     height: calc(100% - 0.3rem);
     max-width: calc(100% - 0.3rem) !important;
     position: relative;
@@ -66,10 +66,24 @@
     padding: 0 !important;
     gap: 3rem;
     border-radius: inherit;
-    background-color: rgba(24, 24, 24, 0.9);
-    
     z-index: 997;
     transition-duration: 0.5s;
+}
+
+.formContent {
+    height: calc(100% - 0.3rem);
+    max-width: calc(100% - 0.3rem) !important;
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 !important;
+    gap: 0rem;
+    border-radius: inherit;
+    z-index: 997;
+    transition-duration: 0.5s;
+    background-color: rgba(24, 24, 24, 0.9);  
 }
 
 .formBg {
@@ -86,7 +100,7 @@
 .textField {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 40%;
+    width: 60%;
 }
 
 .contactHeader {
@@ -172,4 +186,20 @@
     } 100% {
         transform: rotateZ(0deg);
     }
+}
+
+.rightSide, .leftSide {
+    height: calc(100% - 0.3rem);
+    max-width: calc(50% - 0.3rem) !important;
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 !important;
+    gap: 3rem;
+    border-radius: inherit;
+
+    z-index: 997;
+    transition-duration: 0.5s;
 }
