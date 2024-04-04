@@ -1,11 +1,13 @@
-import { Container, TextField, colors } from '@mui/material'
+import { Button, Container, TextField, colors } from '@mui/material'
 import { inputLabelClasses } from "@mui/material/InputLabel";
+import SendIcon from '@mui/icons-material/Send';
 import { useState } from 'react';
 import '../Styles/Contact.css'
 
 function Contact() {
 
     const [hoveredCard, setHoveredCard] = useState(null);
+    const [clicked, setClicked] = useState(false)
 
     const handleOnMouseMove = (e) => {
         const { currentTarget: target } = e;
@@ -17,12 +19,13 @@ function Contact() {
     };
 
     function handleSendEmail(e) {
-        console.log(e)
+        setClicked(true)
+        setTimeout(()=> setClicked(false), 1000)
     }
 
     const inputFields = [
-        {label: 'Vaš email:', className: 'textField emailInput'},
-        {label: 'Poruka:', className: 'textField MessageInput'}, 
+        {label: 'Vaš email:', className: 'textField emailInput', rows: 1},
+        {label: 'Poruka:', className: 'textField MessageInput', rows: 4}, 
     ]
 
 
@@ -45,7 +48,9 @@ function Contact() {
                             {inputFields.map((field) => {
                                 return (
                             <TextField className={field.className} variant='filled' label={field.label}
-                            sx={{ input: { color: 'white'} }}
+                            multiline
+                            rows={field.rows}
+
                             InputLabelProps={{
                                 sx: {
                                   color: "white",
@@ -53,10 +58,12 @@ function Contact() {
                                     // set the color of the label when shrinked (usually when the TextField is focused)
                                     color: "white"
                                   }}}}
+                                  
                             />
                             )
-                            
                             })}
+                            <SendIcon className={`${clicked ? 'clicked' : 'sendIcon'}`} onClick={handleSendEmail}/>
+                            
                             
                         </Container>
 
