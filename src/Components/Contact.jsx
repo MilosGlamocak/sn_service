@@ -12,7 +12,10 @@ function Contact() {
 
     const [hoveredCard, setHoveredCard] = useState(null);
     const [clicked, setClicked] = useState(false);
-    const [message, setMessage] = useState({})
+    const [message, setMessage] = useState({
+        message: '',
+        email: ''
+    })
     const formRef = useRef(null)
 
     const handleOnMouseMove = (e) => {
@@ -31,22 +34,27 @@ function Contact() {
         }))
     }
 
-    const templateParams = {
-        email_from: message.email, // Pass the email field value to the template variable 'email_from'
-        message: message.message // Pass the message field value to the template variable 'message'
-    };
-
     function handleSendEmail(e) {
-        setClicked(true)
-        setTimeout(()=> setClicked(false), 1000);
-        console.log(message)
+        clicked && alert('Morate sacekati 1 minut prije slanja nove poruke!');
 
-        emailjs.send('service_m9kewli', 'template_sf69xjy', message, 'JW3MS5isagNt2qIp4')
+
+        if (message.email.length > 9 && message.email.includes('@') && message.message.length > 20) {
+            emailjs.send('service_m9kewli', 'template_sf69xjy', message, 'JW3MS5isagNt2qIp4')
+            setClicked(true)
+            setTimeout(()=> setClicked(false), 10000);
+            console.log(message);
+            setMessage({
+                email: '',
+                message: '',
+            })
+        } else {
+            alert('Email mora biti validan (preko 9 karaktera) i poruka mora da ima vise od 30 karaktera')
+        }
     }
 
     const inputFields = [
-        {label: 'Vaš email:', className: 'textField emailInput', rows: 1, id: 'email', formName: 'email_from'},
-        {label: 'Poruka:', className: 'textField MessageInput', rows: 8, id: 'message', formName: 'message'}, 
+        {label: 'Vaš email:', className: 'textField emailInput', rows: 1, id: 'email', value: message.email},
+        {label: 'Poruka:', className: 'textField MessageInput', rows: 8, id: 'message', value: message.message}, 
     ]
 
 
@@ -86,7 +94,7 @@ function Contact() {
                     return (
                 <TextField className={field.className} variant='filled' 
                 key={index}
-                name={field.formName}
+                value={field.value}
                 id={field.id}
                 label={field.label}
                 multiline
