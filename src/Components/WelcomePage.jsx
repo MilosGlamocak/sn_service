@@ -15,7 +15,7 @@ function WelcomePage() {
         <>
         <Container className="welcomeContainer">
             <h1 className="welcomeHeader">Autoservis Banja Luka</h1>
-            <p className="welcomeText">Potreban vam je provjeren serviser za vašeg VW ili Audi ljubimca? Na pravom ste mjestu!<br/> Sa <b>15</b> godina uspješnog poslovanja u porodičnoj firmi garantujemo kvalitetom i posvećenosti zanatu.<br></br><i style={{fontSize: '20px'}}>Ugovorite vaš prvi servis već danas!</i></p>
+            <p className="welcomeText">Potreban vam je provjeren serviser za vašeg VW ili Audi ljubimca? Na pravom ste mjestu!<br/> Sa <b>15</b> godina uspješnog poslovanja u porodičnoj firmi garantujemo kvalitetom i posvećenosti zanatu.<br/><br/><i style={{fontSize: '20px'}}>Ugovorite vaš prvi servis već danas!</i></p>
             
          </Container>
          <Container className="welcomeContainerBg"></Container> 

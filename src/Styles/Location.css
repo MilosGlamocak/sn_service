@@ -1,0 +1,10 @@
+.locationContainer {
+    max-width: 100% !important;
+    height: 33%;
+    background-color: black;
+}
+
+.locationHeading {
+    color: white;
+    text-align: center;
+}

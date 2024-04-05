@@ -60,7 +60,7 @@ function Contact() {
 
     return (
         <Container className='contactContainer'>
-            <h2 className='contactHeader'>Kontaktirajte nas!</h2>
+            
             <Container
             className='form'
             onMouseMove={(e) => handleOnMouseMove( e)}
@@ -71,7 +71,7 @@ function Contact() {
                 }
                 : {}
             }
-            >
+            ><h2 className='contactHeader'>Kontaktirajte nas!</h2>
                 <Container className='formContent'>
                 <Container className='leftSide'>
                     <Container className='phoneDiv contactDiv'>

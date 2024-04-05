@@ -1,6 +1,6 @@
 .infoContainer {
     max-width: 100% !important;
-    height: 100vh;
+    height: 33%;
     z-index: 995;
     display: flex !important;
     align-items: center;
