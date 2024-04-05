@@ -49,3 +49,8 @@
     color: white;
     cursor: pointer;
 }
+
+.contactRef {
+    position: absolute;
+    top: 195%;
+}

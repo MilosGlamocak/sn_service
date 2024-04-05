@@ -5,10 +5,10 @@ import { useRef } from "react";
 
 function WelcomePage() {
 
-    const moreRef = useRef(null)
+    const infoRef = useRef(null)
 
-    function handleSmoothScrollMore() {
-        moreRef.current.scrollIntoView({behavior: 'smooth'})
+    function handleSmoothScrollInfo() {
+        infoRef.current.scrollIntoView({behavior: 'smooth'})
     }
 
     return (
@@ -19,10 +19,10 @@ function WelcomePage() {
             
          </Container>
          <Container className="welcomeContainerBg"></Container> 
-        <Button className="scrollButton" variant="contained" onClick={handleSmoothScrollMore}>
+        <Button className="scrollButton" variant="contained" onClick={handleSmoothScrollInfo}>
             <ArrowDownwardIcon className="icon arrowIcon"/>
         </Button>
-        <div ref={moreRef} style={{position: "absolute", top: '90%', transform: 'translate(0 -50%)'}}></div>
+        <div ref={infoRef} style={{position: "absolute", top: '90%', transform: 'translate(0 -50%)'}}></div>
         </>
         
     )
