@@ -54,10 +54,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 10px;
     padding: 0 !important;
     background-color: rgba(255, 255, 255, 0.05);
     position: relative;
+    overflow: hidden;
 }
 
 .card::before, .cardBorder {
@@ -135,10 +135,6 @@
     scale: 1.15;
     text-shadow: 3px 3px 5px rgba(0,0,0,1) !important;
     font-weight: 700 !important;
-}
-
-.card:hover > .infoIconText {
-    
 }
 
 .infoIcon {

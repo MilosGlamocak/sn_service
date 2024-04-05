@@ -5,24 +5,24 @@ import { useRef } from "react";
 
 function WelcomePage() {
 
-    const moreRef = useRef(null)
+    const infoRef = useRef(null)
 
-    function handleSmoothScrollMore() {
-        moreRef.current.scrollIntoView({behavior: 'smooth'})
+    function handleSmoothScrollInfo() {
+        infoRef.current.scrollIntoView({behavior: 'smooth'})
     }
 
     return (
         <>
         <Container className="welcomeContainer">
             <h1 className="welcomeHeader">Autoservis Banja Luka</h1>
-            <p className="welcomeText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium reprehenderit alias nulla nisi fugit inventore nobis debitis blanditiis eaque sunt laborum omnis accusantium asperiores, ratione dolor ipsa? Nemo, facilis?</p>
+            <p className="welcomeText">Potreban vam je provjeren serviser za vašeg VW ili Audi ljubimca? Na pravom ste mjestu!<br/> Sa <b>15</b> godina uspješnog poslovanja u porodičnoj firmi garantujemo kvalitetom i posvećenosti zanatu.<br></br><i style={{fontSize: '20px'}}>Ugovorite vaš prvi servis već danas!</i></p>
             
          </Container>
          <Container className="welcomeContainerBg"></Container> 
-        <Button className="scrollButton" variant="contained" onClick={handleSmoothScrollMore}>
+        <Button className="scrollButton" variant="contained" onClick={handleSmoothScrollInfo}>
             <ArrowDownwardIcon className="icon arrowIcon"/>
         </Button>
-        <div ref={moreRef} style={{position: "absolute", top: '90%', transform: 'translate(0 -50%)'}}></div>
+        <div ref={infoRef} style={{position: "absolute", top: '90%', transform: 'translate(0 -50%)'}}></div>
         </>
         
     )
