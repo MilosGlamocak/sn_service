@@ -33,7 +33,7 @@ function InfoPage({height}) {
         { text: 'Kočioni sistem', icon: <img src={require('../Images/disc-brake-128.png')} alt="Disk Brake" className="infoIcon discBrakeIcon"/>, class: 'brakes', background: require('../Images/disk_brembo.jpg') },
         { text: 'Najsavremenija mašinska zamjena ulja u kočnicama', icon: 
         <Icon path={mdiCarBrakeFluidLevel} size={1.2} color={'white'} className="infoIcon brakeFluidIcon"/>, class: 'brakes', background: require('../Images/brake_fluid_machine.jpg') },
-        { text: 'Punjenje klime', icon: 
+        { text: 'Punjenje klima uređaja', icon: 
         <AcUnitIcon className="infoIcon acUnitIcon"/>, class: 'brakes', background: require('../Images/car_ac.jpg') },
       ];
 
