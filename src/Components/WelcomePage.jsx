@@ -1,15 +1,9 @@
-import { Button, Container } from "@mui/material"
+import {Container } from "@mui/material"
 import '../Styles/WelcomePage.css'
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import { useRef } from "react";
 
 function WelcomePage({height}) {
 
-    const infoRef = useRef(null)
-
-    function handleSmoothScrollInfo() {
-        infoRef.current.scrollIntoView({behavior: 'smooth'})
-    }
+    
 
     return (
         <>
@@ -19,10 +13,6 @@ function WelcomePage({height}) {
             
          </Container>
          <Container className="welcomeContainerBg"></Container> 
-        <Button className="scrollButton" variant="contained" onClick={handleSmoothScrollInfo}>
-            <ArrowDownwardIcon className="icon arrowIcon"/>
-        </Button>
-        <div ref={infoRef} style={{position: "absolute", top: '90%', transform: 'translate(0 -50%)'}}></div>
         </>
         
     )

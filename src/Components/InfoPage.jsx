@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react"
 import '../Styles/InfoPage.css'
-import { Container, Grid, item } from "@mui/material"
+import { Container, Grid, item , Button} from "@mui/material"
 import CarRepairIcon from '@mui/icons-material/CarRepair';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import { FaOilCan } from "react-icons/fa";
@@ -10,6 +10,7 @@ import BoltIcon from '@mui/icons-material/Bolt';
 import Icon from '@mdi/react';
 import { mdiCarBrakeFluidLevel } from '@mdi/js';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
+
 
 
 
@@ -24,7 +25,6 @@ function InfoPage({height}) {
 
         setHoveredCard({ index, x, y });
     };
-
 
     const cards = [
         { text: 'Zamjena ulja i filtera', icon: <FaOilCan className="infoIcon faOilCanIcon"/>, class: 'oil', background: require('../Images/mali_servis.jpg') },
@@ -67,12 +67,11 @@ return (
                             <p className="infoIconText">{field.text}</p>
                         </Container>
                         <Container className="cardBg" style={{ backgroundImage: `url(${field.background})` }}></Container>
-
-                        
-                </Container>
+           </Container>
             </Grid>
             ))}
         </Grid>
+        
     </Container>
 </>
 );
