@@ -10,6 +10,7 @@ function ComponentContainer() {
         <Container className="componentContainer">
 {       //     <Container className="componentContainerBg"/>
 }            <InfoPage height='25%'/>
+            <Reviews height='20%'/>
             <Location height='25%'/>
             <Contact height='20%'/>
             

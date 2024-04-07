@@ -1,11 +1,11 @@
 .componentContainer {
     max-width: 100% !important;
-    height: 400vh;
+    height: 350vh;
     position: absolute !important;
     z-index: 996;
     top: 310%;
     transform: translate(0, -50%);
-    padding: 0 0 20rem 0 !important;
+    padding: 0 0 0 0 !important;
     display: flex !important;
     flex-direction: column;
     align-items: center;

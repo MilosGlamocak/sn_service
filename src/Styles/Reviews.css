@@ -1,4 +1,25 @@
 .reviewsContainer {
-    background-color: red;
-    max-width: 50% !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+.reviewsHeader {
+    text-align: center;
+    color: white;
+    margin-top: 10rem;
+}
+
+.reviews {
+    max-width: 100% !important;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 !important;
 }

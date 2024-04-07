@@ -7,7 +7,10 @@ function Reviews({height}) {
     console.log('reviews')
     return (
         <Container className='reviewsContainer' style={{height: height}}>
-
+            <h2 className='reviewsHeader'>Evo šta zadovoljne mušterije imaju da kažu:</h2>
+            <Container className='reviews'>
+            <iframe src='https://widgets.sociablekit.com/google-reviews/iframe/25394467' frameborder='0' width='100%' height='100%'></iframe>
+            </Container>
         </Container>
     )
 
