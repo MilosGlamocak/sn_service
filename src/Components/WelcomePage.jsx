@@ -3,7 +3,7 @@ import '../Styles/WelcomePage.css'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { useRef } from "react";
 
-function WelcomePage() {
+function WelcomePage({height}) {
 
     const infoRef = useRef(null)
 
@@ -13,7 +13,7 @@ function WelcomePage() {
 
     return (
         <>
-        <Container className="welcomeContainer">
+        <Container className="welcomeContainer" style={{height}}>
             <h1 className="welcomeHeader">Autoservis Banja Luka</h1>
             <p className="welcomeText">Potreban vam je provjeren serviser za vašeg VW ili Audi ljubimca? Na pravom ste mjestu!<br/> Sa <b>15</b> godina uspješnog poslovanja u porodičnoj firmi garantujemo kvalitetom i posvećenosti zanatu.<br/><br/><i style={{fontSize: '20px'}}>Ugovorite vaš prvi servis već danas!</i></p>
             

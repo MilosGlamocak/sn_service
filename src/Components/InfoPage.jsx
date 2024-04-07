@@ -13,7 +13,7 @@ import AcUnitIcon from '@mui/icons-material/AcUnit';
 
 
 
-function InfoPage() {
+function InfoPage({height}) {
     const [hoveredCard, setHoveredCard] = useState(null);
 
     const handleOnMouseMove = (index, e) => {
@@ -39,7 +39,7 @@ function InfoPage() {
 
 return (
 <>
-    <Container className="infoContainer">
+    <Container className="infoContainer" style={{height: height}}>
         <p className="ponudaHeader">U servisu vršimo usluge:</p>
         <Grid
             container
