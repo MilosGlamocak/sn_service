@@ -1,8 +1,10 @@
 .locationContainer {
     max-width: 100% !important;
-    height: 33%;
-    background-color: black;
+    height: 25%;
     padding: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
 }
 
 .mapHeading {
@@ -12,7 +14,7 @@
 
 .mapContainer {
     max-width: 100% !important;
-    height: 90%;
+    height: 70%;
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -21,8 +23,8 @@
 }
 
 .map {
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 50%;
     border: 0 !important;
     filter: invert(0%);
 }

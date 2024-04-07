@@ -9,8 +9,9 @@ function ComponentContainer() {
         <Container className="componentContainer">
 {       //     <Container className="componentContainerBg"/>
 }            <InfoPage/>
-            <Contact/>
             <Location/>
+            <Contact/>
+            
         </Container>
     )
 }

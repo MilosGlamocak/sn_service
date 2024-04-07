@@ -1,14 +1,15 @@
 .contactContainer {
     max-width: 100% !important;
-    height: 100vh;
+    height: 80vh !important;
     display: flex !important;
+    padding: 0 !important;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
 .form {
-    height: 70%;
+    height: 100%;
     display: flex !important;
     align-items: center;
     justify-content: center;
