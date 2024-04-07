@@ -28,6 +28,7 @@ function InfoPage() {
         { text: 'Veliki servis', icon: <CarRepairIcon className="infoIcon carRepairIcon"/>, class: 'bigService', background: `https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D` },
         { text: 'Autodijagnostika', icon: <BoltIcon className="infoIcon boltIcon"/>, class: 'diagnostics', background: `https://images.unsplash.com/photo-1584202756061-a01bb5f601cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D` },
         { text: 'Kočioni sistem', icon: <img src={require('../Images/disc-brake-128.png')} alt="Disk Brake" className="infoIcon discBrakeIcon"/>, class: 'brakes', background: `https://images.unsplash.com/photo-1696494561430-de087dd0bd69?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D` },
+        { text: 'Najsavremenija mašinska zamjena ulja u kočnicama', icon: <img src={require('../Images/disc-brake-128.png')} alt="Disk Brake" className="infoIcon discBrakeIcon"/>, class: 'brakes', background: `https://www.continental-aftermarket.com/media/2803/bremsenentlueftung_ate_final.jpg` },
       ];
 
 return (

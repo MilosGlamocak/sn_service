@@ -2,9 +2,27 @@
     max-width: 100% !important;
     height: 33%;
     background-color: black;
+    padding: 0 !important;
 }
 
-.locationHeading {
+.mapHeading {
     color: white;
     text-align: center;
+}
+
+.mapContainer {
+    max-width: 100% !important;
+    height: 90%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.map {
+    height: 90%;
+    width: 90%;
+    border: 0 !important;
+    filter: invert(0%);
 }
