@@ -7,6 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import { useRef, useState } from 'react';
 import '../Styles/Contact.css';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 function Contact({height}) {
 
@@ -42,13 +43,13 @@ function Contact({height}) {
             emailjs.send('service_m9kewli', 'template_sf69xjy', message, 'JW3MS5isagNt2qIp4')
             setClicked(true)
             setTimeout(()=> setClicked(false), 10000);
-            console.log(message);
+            toast.success(`Vaša poruka je poslana!`)
             setMessage({
                 email: '',
                 message: '',
             })
         } else {
-            alert('Email mora biti validan (preko 9 karaktera) i poruka mora da ima vise od 30 karaktera')
+            toast.error('Email mora biti validan (preko 9 karaktera) i poruka mora da ima više od 30 karaktera!')
         }
     }
 

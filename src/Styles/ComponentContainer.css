@@ -88,22 +88,21 @@
 .scrollButton6 {
     background-color: white !important;
     color: black !important;
-    opacity: 1 !important;
-    position: absolute !important;
-    width: 5rem;
-    height: 5rem;
-    top: 96%;
-    left: 85%;
-    transform: translate(-50%, -50%);
+    position: fixed !important;
+    z-index: 999 !important;
+    left: 95%;
+    top: 90%;
+    transform: translate(-50%, -50%) rotateZ(180deg);
     border-radius: 50% !important;
-    z-index: 997;
-    transform: rotateZ(180deg) !important;
+    height: 4rem;
+    width: 4rem
+
 }
 
 
 .centerLine {
     width: 1px;
-    background-color: gray;
+    background-color: rgb(100, 100, 100);
     position: absolute;
     z-index: 1;
 

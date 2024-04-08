@@ -3,8 +3,6 @@ import { Container } from "@mui/material"
 import React from 'react';
 
 function Reviews({height}) {
-
-    console.log('reviews')
     return (
         <Container className='reviewsContainer' style={{height: height}}>
             <h2 className='reviewsHeader'>Ocjene klijenata:</h2>
