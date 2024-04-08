@@ -19,7 +19,6 @@
 
     text-align: left;
     margin-left: 2rem;
-    cursor: pointer;
 }
 
 .nav {
@@ -52,5 +51,10 @@
 
 .contactRef {
     position: absolute;
-    top: 195%;
+    top: 400%;
+}
+
+.locationRef {
+    position: absolute;
+    top: 308%;
 }

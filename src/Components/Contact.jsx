@@ -8,7 +8,7 @@ import { useRef, useState } from 'react';
 import '../Styles/Contact.css';
 import emailjs from '@emailjs/browser';
 
-function Contact() {
+function Contact({height}) {
 
     const [hoveredCard, setHoveredCard] = useState(null);
     const [clicked, setClicked] = useState(false);
@@ -59,8 +59,8 @@ function Contact() {
 
 
     return (
-        <Container className='contactContainer'>
-            <h2 className='contactHeader'>Kontaktirajte nas!</h2>
+        <Container className='contactContainer' style={{height: height}}>
+            
             <Container
             className='form'
             onMouseMove={(e) => handleOnMouseMove( e)}
@@ -71,7 +71,7 @@ function Contact() {
                 }
                 : {}
             }
-            >
+            ><h2 className='contactHeader'>Kontaktirajte nas!</h2>
                 <Container className='formContent'>
                 <Container className='leftSide'>
                     <Container className='phoneDiv contactDiv'>

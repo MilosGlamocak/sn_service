@@ -6,8 +6,13 @@ function NavigationContainer() {
 
   const contactRef = useRef(null)
 
-  function handleScrollInfo() {
+  function handleScrollContact() {
     contactRef.current.scrollIntoView({behavior: 'smooth'})
+  }
+  const locationRef = useRef(null)
+
+  function handleScrollLocation() {
+    locationRef.current.scrollIntoView({behavior: 'smooth'})
   }
 
   return ( 
@@ -15,13 +20,14 @@ function NavigationContainer() {
     <Container className="topNav">
         <h1 className="siteName">SN Service</h1>
         <Container className="nav rightNav">
-          <Container className="linkDiv" onClick={handleScrollInfo}><h3>Kontakt</h3></Container>
-          <Container className="linkDiv"><h3>Lokacija</h3></Container>
+          <Container className="linkDiv" onClick={handleScrollContact}><h3>Kontakt</h3></Container>
+          <Container className="linkDiv" onClick={handleScrollLocation}><h3>Lokacija</h3></Container>
         </Container>
 
         
     </Container>
     <div className="contactRef" ref={contactRef}></div>
+    <div className="locationRef" ref={locationRef}></div>
     </>
     
   )

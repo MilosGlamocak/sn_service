@@ -1,14 +1,14 @@
 .contactContainer {
     max-width: 100% !important;
-    height: 100vh;
     display: flex !important;
+    padding: 0 !important;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
 .form {
-    height: 70%;
+    height: 100%;
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -62,7 +62,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 !important;
+    padding: 2rem 0 0 0 !important;
     gap: 2.7rem;
     border-radius: inherit;
     z-index: 997;
@@ -77,7 +77,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding: 0 !important;
+    padding: 2rem 0 0 0 !important;
     gap: 0rem;
     border-radius: inherit;
     z-index: 997;
@@ -109,7 +109,8 @@
 .contactHeader {
     color: white;
     position: absolute;
-    top: 53%;
+    z-index: 999;
+    top: 10%;
 }
 
 

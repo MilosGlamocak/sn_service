@@ -1,0 +1,35 @@
+.locationContainer {
+    max-width: 100% !important;
+    height: 25%;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+
+.mapContainer {
+    max-width: 80% !important;
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.mapHeading {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.map {
+    height: 70%;
+    width: 100%;
+    border: 0 !important;
+    filter: invert(0%);
+}
