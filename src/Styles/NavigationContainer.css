@@ -39,7 +39,7 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-    color: rgb(197, 197, 197);
+    color: rgb(150, 150, 150);
 
     transition-duration: 0.5s;
 }

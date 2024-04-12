@@ -35,14 +35,16 @@ function ComponentContainer() {
     const startRef = useRef(null)
 
     function handleSmoothScrollStart() {
-        startRef.current.scrollIntoView({behavior: 'smooth'});
-        setVisible(false)
+        startRef.current.scrollIntoView({behavior: 'smooth'})
     }
 
     const [visible, setVisible] = useState(false)
 
     function detectMouseScrollUp(e) {
         e.deltaY < 0 ? setVisible(true) : setVisible(false)
+        visible && setTimeout(() => {
+            setVisible(false)
+        }, 2500)
     }
 
     return (
