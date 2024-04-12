@@ -35,7 +35,8 @@ function ComponentContainer() {
     const startRef = useRef(null)
 
     function handleSmoothScrollStart() {
-        startRef.current.scrollIntoView({behavior: 'smooth'})
+        startRef.current.scrollIntoView({behavior: 'smooth'});
+        setVisible(false)
     }
 
     const [visible, setVisible] = useState(false)
