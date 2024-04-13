@@ -42,9 +42,6 @@ function ComponentContainer() {
 
     function detectMouseScrollUp(e) {
         e.deltaY < 0 ? setVisible(true) : setVisible(false)
-        visible && setTimeout(() => {
-            setVisible(false)
-        }, 2500)
     }
 
     return (
