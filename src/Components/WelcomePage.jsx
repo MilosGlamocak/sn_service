@@ -2,9 +2,6 @@ import {Container } from "@mui/material"
 import '../Styles/WelcomePage.css'
 
 function WelcomePage({height}) {
-
-    
-
     return (
         <>
         <Container className="welcomeContainer" style={{height}}>
