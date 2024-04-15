@@ -62,4 +62,14 @@
         font-size: 0.8rem;
         max-width: 33% !important;
     }
+
+    .contactRef {
+        position: absolute;
+        top: 430%;
+    }
+    
+    .locationRef {
+        position: absolute;
+        top: 327.8%;
+    }
 }
