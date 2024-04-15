@@ -59,6 +59,10 @@ function Contact({height}) {
         {label: 'Poruka:', className: 'textField MessageInput', rows: 8, id: 'message', value: message.message}, 
     ]
 
+    function handleOpenInstagram() {
+        window.open('https://www.instagram.com/snservice_banjaluka/', '_blank');
+    }
+
 
     return (
         <Container className='contactContainer' style={{height: height}}>
@@ -84,7 +88,7 @@ function Contact({height}) {
                         <EmailIcon className='contactIcon email'/>
                         <p className='contactText'>snservicebl@gmail.com</p>
                     </Container>
-                    <Container className='instagramDiv contactDiv'>
+                    <Container className='instagramDiv contactDiv' onClick={handleOpenInstagram}>
                         <InstagramIcon className='contactIcon instagram'/>
                         <p className='contactText'>@snservice_banjaluka</p>
                     </Container>
