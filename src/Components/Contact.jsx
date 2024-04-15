@@ -105,6 +105,12 @@ function Contact({height}) {
                 label={field.label}
                 multiline
                 rows={field.rows}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        handleSendEmail()
+                    }
+                }}
                 onChange={handleMessageChange}
                 InputLabelProps={{
                     sx: {
