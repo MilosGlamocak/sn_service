@@ -47,7 +47,7 @@ function ComponentContainer() {
     useEffect(() => {
         window.onscroll = (e) => {
             if (window.scrollY <= 10) {
-                setVisible(false);
+                    setVisible(false)
             }
         }
     }, [visible])
