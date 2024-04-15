@@ -82,3 +82,15 @@
     }
 }
 
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+    .welcomeHeader {
+        font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+
+    .welcomeText {
+        font-size: 1.3rem; /* Adjust font size for smaller screens */
+        gap: 1rem; /* Reduce the gap between elements */
+    }
+}

@@ -16,7 +16,6 @@
 
 .siteName {
     font-size: 2.5rem;
-
     text-align: left;
     margin-left: 2rem;
 }
@@ -39,8 +38,7 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-    color: rgb(197, 197, 197);
-
+    color: rgb(150, 150, 150);
     transition-duration: 0.5s;
 }
 
@@ -57,4 +55,11 @@
 .locationRef {
     position: absolute;
     top: 308%;
+}
+
+@media screen and (max-width: 767px) {
+    .linkDiv {
+        font-size: 0.8rem;
+        max-width: 33% !important;
+    }
 }

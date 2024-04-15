@@ -7,6 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import { useRef, useState } from 'react';
 import '../Styles/Contact.css';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 function Contact({height}) {
 
@@ -35,20 +36,21 @@ function Contact({height}) {
     }
 
     function handleSendEmail(e) {
-        clicked && alert('Morate sacekati 1 minut prije slanja nove poruke!');
+        clicked && alert('Morate sačekati 1 minut prije slanja nove poruke!');
 
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        if (message.email.length > 9 && message.email.includes('@') && message.message.length > 20) {
+        if (emailRegex.test(message.email) && message.message.length > 19) {
             emailjs.send('service_m9kewli', 'template_sf69xjy', message, 'JW3MS5isagNt2qIp4')
             setClicked(true)
             setTimeout(()=> setClicked(false), 10000);
-            console.log(message);
+            toast.success(`Vaša poruka je poslana!`)
             setMessage({
                 email: '',
                 message: '',
             })
         } else {
-            alert('Email mora biti validan (preko 9 karaktera) i poruka mora da ima vise od 30 karaktera')
+            toast.error('Email mora biti validan i poruka mora da ima više od 30 karaktera!')
         }
     }
 
@@ -80,7 +82,7 @@ function Contact({height}) {
                     </Container>
                     <Container className='emailDiv contactDiv'>
                         <EmailIcon className='contactIcon email'/>
-                        <p className='contactText'>snservice_banjaluka@gmail.com</p>
+                        <p className='contactText'>snservicebl@gmail.com</p>
                     </Container>
                     <Container className='instagramDiv contactDiv'>
                         <InstagramIcon className='contactIcon instagram'/>

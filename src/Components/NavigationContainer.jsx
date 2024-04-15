@@ -23,8 +23,6 @@ function NavigationContainer() {
           <Container className="linkDiv" onClick={handleScrollContact}><h3>Kontakt</h3></Container>
           <Container className="linkDiv" onClick={handleScrollLocation}><h3>Lokacija</h3></Container>
         </Container>
-
-        
     </Container>
     <div className="contactRef" ref={contactRef}></div>
     <div className="locationRef" ref={locationRef}></div>

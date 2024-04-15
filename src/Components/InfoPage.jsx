@@ -26,16 +26,18 @@ function InfoPage({height}) {
         setHoveredCard({ index, x, y });
     };
 
+
     const cards = [
         { text: 'Zamjena ulja i filtera', icon: <FaOilCan className="infoIcon faOilCanIcon"/>, class: 'oil', background: require('../Images/mali_servis.jpg') },
         { text: 'Veliki servis', icon: <CarRepairIcon className="infoIcon carRepairIcon"/>, class: 'bigService', background: require('../Images/veliki_servis.jpg') },
         { text: 'Autodijagnostika', icon: <BoltIcon className="infoIcon boltIcon"/>, class: 'diagnostics', background: require('../Images/autodijagnostika.jpg') },
         { text: 'Kočioni sistem', icon: <img src={require('../Images/disc-brake-128.png')} alt="Disk Brake" className="infoIcon discBrakeIcon"/>, class: 'brakes', background: require('../Images/disk_brembo.jpg') },
         { text: 'Najsavremenija mašinska zamjena ulja u kočnicama', icon: 
-        <Icon path={mdiCarBrakeFluidLevel} size={1.2} color={'white'} className="infoIcon brakeFluidIcon"/>, class: 'brakes', background: require('../Images/brake_fluid_machine.jpg') },
+        <Icon path={mdiCarBrakeFluidLevel} size={1.2} color={'white'} className="infoIcon brakeFluidIcon"/>, class: 'brakeOilSwap', background: require('../Images/brake_fluid_machine.jpg') },
         { text: 'Punjenje klima uređaja', icon: 
-        <AcUnitIcon className="infoIcon acUnitIcon"/>, class: 'brakes', background: require('../Images/car_ac.jpg') },
+        <AcUnitIcon className="infoIcon acUnitIcon"/>, class: 'acUnit', background: require('../Images/car_ac.jpg') },
       ];
+
 
 return (
 <>
@@ -66,7 +68,7 @@ return (
                         {field.icon}
                             <p className="infoIconText">{field.text}</p>
                         </Container>
-                        <Container className="cardBg" style={{ backgroundImage: `url(${field.background})` }}></Container>
+                        <Container className={`cardBg ${field.class}`} style={{ backgroundImage: `url(${field.background})`, backgroundPosition: field.bgPosition, backgroundSize: field.bgSize}}></Container>
            </Container>
             </Grid>
             ))}

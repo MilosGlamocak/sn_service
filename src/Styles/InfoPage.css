@@ -152,3 +152,33 @@
     margin-top: -2.5rem;
     filter: invert();
 }
+
+.acUnit, .brakeOilSwap {
+    background-size: 100%;
+    background-position: 50% 60%;
+}
+
+@media screen and (max-width: 767px) {
+    .acUnit, .brakeOilSwap, .brakes {
+        background-size: 200%;
+        background-position: 50%;
+    }
+    .infoIconText {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .card:hover > .cardBg {
+        opacity: 0.2 !important;
+        filter: grayscale(60%);
+    }
+    
+    .card:hover > .cardContent {
+        opacity: 1;
+        scale: 1;
+        text-shadow: 3px 3px 5px rgba(0,0,0,1) !important;
+        font-weight: 700 !important;
+    }
+    .card:hover > .cardBorder, .cardBorder:hover {
+        background: none;
+    }
+}
