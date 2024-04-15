@@ -167,4 +167,18 @@
         font-size: 1.2rem;
         font-weight: 400;
     }
+    .card:hover > .cardBg {
+        opacity: 0.2 !important;
+        filter: grayscale(60%);
+    }
+    
+    .card:hover > .cardContent {
+        opacity: 1;
+        scale: 1;
+        text-shadow: 3px 3px 5px rgba(0,0,0,1) !important;
+        font-weight: 700 !important;
+    }
+    .card:hover > .cardBorder, .cardBorder:hover {
+        background: none;
+    }
 }

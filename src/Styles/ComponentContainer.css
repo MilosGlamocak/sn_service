@@ -140,4 +140,9 @@
     .scrollButton6 {
         right: 3% !important;
     }
+
+    .c1 {
+        top: -2%;
+        height: 2%;
+    }
 }
