@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sn_service/static/css/main.c178c293.css",
+    "main.css": "/sn_service/static/css/main.cfccea56.css",
     "main.js": "/sn_service/static/js/main.47986934.js",
     "static/js/453.b35aef41.chunk.js": "/sn_service/static/js/453.b35aef41.chunk.js",
     "static/media/Remenje.jpg": "/sn_service/static/media/Remenje.a2065f8bedbe60018f64.jpg",
@@ -11,12 +11,12 @@
     "static/media/brake_fluid_machine.jpg": "/sn_service/static/media/brake_fluid_machine.f06f42267014de835230.jpg",
     "static/media/veliki_servis.jpg": "/sn_service/static/media/veliki_servis.f64eec6def53b4af6c2c.jpg",
     "index.html": "/sn_service/index.html",
-    "main.c178c293.css.map": "/sn_service/static/css/main.c178c293.css.map",
+    "main.cfccea56.css.map": "/sn_service/static/css/main.cfccea56.css.map",
     "main.47986934.js.map": "/sn_service/static/js/main.47986934.js.map",
     "453.b35aef41.chunk.js.map": "/sn_service/static/js/453.b35aef41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c178c293.css",
+    "static/css/main.cfccea56.css",
     "static/js/main.47986934.js"
   ]
 }
