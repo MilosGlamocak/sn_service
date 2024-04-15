@@ -134,15 +134,15 @@
 /* For mobile Chrome */
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio:0) {
     .componentContainer {
-        top: 310%;
+        top: 320%;
         height: 390vh;
     }
     .scrollButton6 {
-        right: 3% !important;
+        left: 70% !important;
     }
 
     .c1 {
         top: -2%;
-        height: 2%;
+        height: 0%;
     }
 }
