@@ -239,9 +239,13 @@
 
 .contactText {
     color: white;
-    font-size: clamp(1rem, 2vw, 1.2rem); /* Adjust the values as needed */
+    font-size: clamp(0.9rem, 2vw, 1.2rem); /* Adjust the values as needed */
     user-select: all !important;
     text-align: center;
+}
+
+.instagramDiv {
+    cursor: pointer;
 }
 
 /* For mobile Chrome */
@@ -252,4 +256,9 @@
     .textField {
         width: clamp(90%, 100%, 70%) !important;
     }
+
+    .formContentRight {
+        padding: 3rem 0 0 0 !important;
+    }
+    
 }    
