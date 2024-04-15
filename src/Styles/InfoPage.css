@@ -159,7 +159,7 @@
 
 @media screen and (max-width: 767px) {
     .acUnit, .brakeOilSwap, .brakes {
-        background-size: 200%;
+        background-size: 230%;
         background-position: 50%;
     }
     .infoIconText {

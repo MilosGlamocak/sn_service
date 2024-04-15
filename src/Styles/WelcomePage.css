@@ -95,6 +95,6 @@
     }
 
     .welcomeContainer {
-        padding-top: 1rem;
+        padding-top: 0rem !important;
     }
 }
