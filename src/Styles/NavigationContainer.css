@@ -72,4 +72,9 @@
         position: absolute;
         top: 327.8%;
     }
+    .siteName {
+        font-size: 2rem;
+        text-align: left;
+        margin-left: 0.5rem;
+    }
 }
