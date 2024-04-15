@@ -98,7 +98,7 @@
 
 .textField {
     background-color: rgba(255, 255, 255, 0.05);
-    width: 70%;
+    width: clamp(70%, 100%, 70%) !important;
     transition-duration: 0.3s;
 }
 
@@ -215,7 +215,7 @@
 
 .contactDiv {
     max-width: clamp(70%, 100%, 70%) !important;
-    height: 15%;
+    height: 14.7%;
     display: flex !important;
     flex-direction: column;
     align-items: center;
@@ -243,3 +243,13 @@
     user-select: all !important;
     text-align: center;
 }
+
+/* For mobile Chrome */
+@media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio:0) {
+    .contactDiv {
+        max-width: clamp(90%, 100%, 70%) !important;
+    }
+    .textField {
+        width: clamp(90%, 100%, 70%) !important;
+    }
+}    

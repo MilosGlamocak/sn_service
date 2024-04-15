@@ -5,7 +5,7 @@ import Contact from "./Contact"
 import Location from "./Location"
 import Reviews from "./Reviews"
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 function ComponentContainer() {
     const infoRef = useRef(null)
@@ -38,11 +38,19 @@ function ComponentContainer() {
         startRef.current.scrollIntoView({behavior: 'smooth'})
     }
 
-    const [visible, setVisible] = useState(false)
+    const [visible, setVisible] = useState(false);
 
     function detectMouseScrollUp(e) {
-        e.deltaY < 0 ? setVisible(true) : setVisible(false)
+        setVisible(e.deltaY < 0);
     }
+
+    useEffect(() => {
+        window.onscroll = (e) => {
+            if (window.scrollY <= 10) {
+                setVisible(false);
+            }
+        }
+    }, [visible])
 
     return (
         <>
@@ -76,7 +84,7 @@ function ComponentContainer() {
         <div ref={startRef} style={{position: "absolute", top: '-50%', transform: 'translate(0 -50%)'}}></div>
             
         </Container>
-        <Button className="scrollButton6" variant="contained" onClick={handleSmoothScrollStart} style={{scale: visible ? '1' : '0'}}>
+        <Button className="scrollButton6" variant="contained" onClick={handleSmoothScrollStart} style={{ display: visible ? 'flex' : 'none' }}>
         <ArrowDownwardIcon className="icon arrowIcon"/>
     </Button>
         </>

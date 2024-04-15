@@ -89,7 +89,7 @@
     color: black !important;
     position: fixed !important;
     z-index: 999 !important;
-    right: -3%;
+    left: 95%;
     top: 90%;
     transform: translate(-50%, -50%) rotateZ(180deg);
     border-radius: 50% !important;
@@ -135,5 +135,9 @@
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio:0) {
     .componentContainer {
         top: 310%;
+        height: 390vh;
+    }
+    .scrollButton6 {
+        right: 3% !important;
     }
 }

@@ -152,3 +152,19 @@
     margin-top: -2.5rem;
     filter: invert();
 }
+
+.acUnit, .brakeOilSwap {
+    background-size: 100%;
+    background-position: 50% 60%;
+}
+
+@media screen and (max-width: 767px) {
+    .acUnit, .brakeOilSwap, .brakes {
+        background-size: 200%;
+        background-position: 50%;
+    }
+    .infoIconText {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
