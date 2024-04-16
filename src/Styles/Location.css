@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 
@@ -32,4 +32,11 @@
     width: 100%;
     border: 0 !important;
     filter: invert(0%);
+}
+
+.addressText {
+    color: white;
+    font-size: 1.05rem;
+    text-decoration: none;
+    color: orange;
 }
