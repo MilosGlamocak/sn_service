@@ -129,7 +129,7 @@
 /* For mobile Chrome */
 @media screen and (max-width: 390px) and (-webkit-min-device-pixel-ratio:0) {
     .componentContainer {
-        top: 320% !important;
+        top: 335% !important;
     }
     .scrollButton6 {
         left: 50% !important;
