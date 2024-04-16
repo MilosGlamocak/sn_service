@@ -4,6 +4,7 @@ import InfoPage from "./InfoPage"
 import Contact from "./Contact"
 import Location from "./Location"
 import Reviews from "./Reviews"
+import WelcomePage from "./WelcomePage"
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { useEffect, useRef, useState } from "react"
 
@@ -62,10 +63,12 @@ function ComponentContainer() {
             <div className="centerLine c3"/>
             <div className="centerLine c4"/>
 {       //     <Container className="componentContainerBg"/>
-}            <InfoPage height='25%'/>
-            <Reviews height='25%'/>
-            <Location height='25%'/>
-            <Contact height='25%'/>
+            
+}            <WelcomePage height='20%'/>
+            <InfoPage height='20%'/>
+            <Reviews height='18%'/>
+            <Location height='20%'/>
+            <Contact height='15%'/>
         <Button className="scrollButton" variant="contained" onClick={handleSmoothScrollInfo}>
             <ArrowDownwardIcon className="icon arrowIcon"/>
         </Button>

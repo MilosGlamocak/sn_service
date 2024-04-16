@@ -1,0 +1,11 @@
+.componentContainer2 {
+    padding: 0rem 0 10rem 0 !important;
+    height: 500vh;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    gap: 10rem;
+    background-color: black;
+}

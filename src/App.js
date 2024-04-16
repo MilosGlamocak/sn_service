@@ -7,6 +7,7 @@ import InfoPage from './Components/InfoPage';
 import ComponentContainer from './Components/ComponentContainer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ComponentContainer2 from './Components/ComponentContainer2';
 
 
 
@@ -15,8 +16,9 @@ function App() {
   return (
     <Container className='container'>
       <NavigationContainer />
-      <WelcomePage />
-      <ComponentContainer />
+      <ComponentContainer2/>
+      {/*<WelcomePage />
+      <ComponentContainer />*/}
       <ToastContainer
 position="bottom-right"
 autoClose={5000}
