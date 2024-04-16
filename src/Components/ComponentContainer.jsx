@@ -52,6 +52,8 @@ function ComponentContainer() {
         }
     }, [visible])
 
+    console.log(window.innerHeight)
+
     return (
         <>
         <Container className="componentContainer" onWheel={detectMouseScrollUp}>
