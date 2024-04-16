@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sn_service/static/css/main.8860ac57.css",
+    "main.css": "/sn_service/static/css/main.7ec6148a.css",
     "main.js": "/sn_service/static/js/main.7a85c1d8.js",
     "static/js/453.b35aef41.chunk.js": "/sn_service/static/js/453.b35aef41.chunk.js",
     "static/media/Remenje.jpg": "/sn_service/static/media/Remenje.a2065f8bedbe60018f64.jpg",
@@ -11,12 +11,12 @@
     "static/media/brake_fluid_machine.jpg": "/sn_service/static/media/brake_fluid_machine.f06f42267014de835230.jpg",
     "static/media/veliki_servis.jpg": "/sn_service/static/media/veliki_servis.f64eec6def53b4af6c2c.jpg",
     "index.html": "/sn_service/index.html",
-    "main.8860ac57.css.map": "/sn_service/static/css/main.8860ac57.css.map",
+    "main.7ec6148a.css.map": "/sn_service/static/css/main.7ec6148a.css.map",
     "main.7a85c1d8.js.map": "/sn_service/static/js/main.7a85c1d8.js.map",
     "453.b35aef41.chunk.js.map": "/sn_service/static/js/453.b35aef41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8860ac57.css",
+    "static/css/main.7ec6148a.css",
     "static/js/main.7a85c1d8.js"
   ]
 }
