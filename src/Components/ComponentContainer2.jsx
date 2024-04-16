@@ -48,13 +48,25 @@ function ComponentContainer2() {
     }, [visible])
     
     return ( 
+        <>
         <Container className='componentContainer2' onWheel={detectMouseScrollUp}>
             <WelcomePage height='25%'/>
             <InfoPage height='20%' />
             <Reviews height='20%'/>
             <Location height='20%'/>
             <Contact height='17%' /> 
+            
         </Container>
+        <Button className='scrollButton scrollBtn1' variant='contained' onClick={handleSmoothScrollInfo}>
+            <ArrowDownwardIcon className='scrollIcon'/>
+        </Button>
+        <Button className='scrollButton scrollBtn2' variant='contained' style={{display: visible ? 'flex' : 'none'}} onClick={handleSmoothScrollStart}>
+            <ArrowDownwardIcon className='scrollIcon' />
+        </Button>
+        <div ref={infoRef} className='infoRef'/>
+        <div ref={startRef} className='startRef'/>
+        </>
+        
     )
 }
 

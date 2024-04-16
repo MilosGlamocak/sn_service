@@ -1,4 +1,4 @@
-.componentContainer {
+/*.componentContainer {
     max-width: 100% !important;
     height: 450vh;
     top: 300%;
@@ -126,7 +126,7 @@
     height: 2.3%;
 }
 
-/* For mobile Chrome */
+/* For mobile Chrome 
 @media screen and (max-width: 390px) and (-webkit-min-device-pixel-ratio:0) {
     .componentContainer {
         top: 300vh !important;
@@ -140,4 +140,4 @@
         height: 0%;
     }
 }
-
+*/

@@ -6,6 +6,48 @@
     flex-direction: column;
     align-items: center;
     justify-content: baseline;
-    gap: 10rem;
+    gap: 5rem;
     background-color: black;
+}
+
+.scrollButton {
+    height: 4rem;
+    width: 4rem;
+    position: absolute !important;
+    transform: translate(-50%, -50%);
+    border-radius: 50% !important;
+    background-color: white !important;
+    z-index: 999;
+}
+
+.scrollIcon {
+    scale: 1.3;
+    color: black
+}
+
+.scrollBtn1 {
+    top: 90vh;
+    left: 50%;
+}
+
+.scrollBtn2 {
+    position: fixed !important;
+    bottom: 3vh;
+    right: 3%;
+    scale: 0.8;
+    transform: rotateZ(180deg);
+}
+
+.scrollBtn2:hover {
+    animation: none; 
+}
+
+.infoRef {
+    position: absolute !important;
+    top: 100vh;
+}
+
+.startRef {
+    position: absolute !important;
+    top: 0;
 }

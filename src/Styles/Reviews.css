@@ -25,9 +25,5 @@
     flex-direction: column;
     padding: 0 !important;
     overflow: hidden;
-}
-
-.reviewsIframe {
-    background: black !important;
-    color: black;
+    filter: invert();
 }
