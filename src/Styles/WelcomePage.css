@@ -5,7 +5,6 @@
     background-size: cover;
     background-repeat: no-repeat !important;
     opacity: 0.2;
-    top: 0;
     position: absolute !important;
     z-index: 1;
 }
@@ -13,10 +12,6 @@
 .welcomeContainer {
     color: white;
     max-width: 70% !important;
-    position: absolute !important;
-    height: 90vh;
-    margin: 0 0 0 0 !important;
-    padding-bottom: 5rem;
     z-index: 996;
     opacity: 1 !important;
     display: flex !important;
@@ -24,7 +19,7 @@
     justify-content: center;
     align-items: baseline;
     gap: 3rem;
-    animation: leftRight 350ms ease-in-out forwards;
+    height: 90vh;
 }
 
 .welcomeHeader {

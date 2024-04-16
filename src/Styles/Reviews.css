@@ -25,4 +25,5 @@
     flex-direction: column;
     padding: 0 !important;
     overflow: hidden;
+    filter: invert();
 }
