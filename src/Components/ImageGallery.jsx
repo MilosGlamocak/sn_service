@@ -28,7 +28,7 @@ function ImageGallery({height}) {
   return (
     <Container className='galleryCont'  style={{height: height}}> 
         <h2 className='galleryHeader'>Galerija:</h2>
-        <Box sx={{ width: '100%', height: '85%', overflowY: 'scroll', scrollbarWidth: 'none', '&::-webkit-scrollbar': { width: 0 }}}>
+        <Box sx={{ width: '100%', height: '100%', overflowY: 'scroll', scrollbarWidth: 'none', '&::-webkit-scrollbar': { width: 0 }}}>
       <ImageList className='imageList' variant="masonry" cols={4} gap={8}>
         {images.map((item, index) => (
           <ImageListItem key={index}>
