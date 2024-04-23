@@ -48,13 +48,18 @@
 }
 
 .contactRef {
-    position: absolute;
-    top: 400%;
+    position: absolute !important;
+    top: 1000% !important;
 }
 
 .locationRef {
     position: absolute;
-    top: 308%;
+    top: 370% !important;
+}
+
+.lightBox {
+    width: 100%;
+    scale: 1.0;
 }
 
 @media screen and (max-width: 767px) {

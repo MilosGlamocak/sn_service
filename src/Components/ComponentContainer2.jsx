@@ -8,6 +8,7 @@ import Location from './Location';
 import Contact from './Contact';
 import { useRef, useEffect, useState } from 'react';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ImageGallery from './ImageGallery';
 
 function ComponentContainer2() {
 
@@ -52,9 +53,10 @@ function ComponentContainer2() {
         <Container className='componentContainer2' onWheel={detectMouseScrollUp}>
             <WelcomePage height='25%'/>
             <InfoPage height='20%' />
-            <Reviews height='20%'/>
+            <ImageGallery height='20%'/>
+            <Reviews height='15%'/>
             <Location height='20%'/>
-            <Contact height='17%' /> 
+            <Contact height='16%' /> 
             
         </Container>
         <Button className='scrollButton scrollBtn1' variant='contained' onClick={handleSmoothScrollInfo}>
