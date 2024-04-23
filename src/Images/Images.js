@@ -1,5 +1,3 @@
-import {Image} from 'react-grid-gallery'
-
 export const images = [
     {
        src: "https://lh3.googleusercontent.com/p/AF1QipP8KNorJqITyockCOqkDljqVCPTRPszzx6CnT8r=s680-w680-h510",
