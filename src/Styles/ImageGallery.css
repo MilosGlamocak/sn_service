@@ -2,7 +2,7 @@
 
 .galleryCont {
     max-width: 100% !important;
-    padding: 0 !important;
+    padding: 2rem 1rem 0rem 1rem !important;
     margin-top: 5rem;
     display: flex !important;
     flex-direction: column;
@@ -19,10 +19,10 @@
     font-weight: 500;
 }
 
-
 .img {
-    height: 41rem;
+    cursor: pointer;
 }
+
 
 @keyframes autoPlay {
     0% {

@@ -53,7 +53,7 @@ function ComponentContainer2() {
         <Container className='componentContainer2' onWheel={detectMouseScrollUp}>
             <WelcomePage height='25%'/>
             <InfoPage height='20%' />
-            <ImageGallery height='15%'/>
+            <ImageGallery height='20%'/>
             <Reviews height='15%'/>
             <Location height='18%'/>
             <Contact height='17%' /> 
