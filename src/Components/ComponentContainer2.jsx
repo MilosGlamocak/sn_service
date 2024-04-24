@@ -12,7 +12,7 @@ import ImageGallery from './ImageGallery';
 
 function ComponentContainer2() {
 
-    const [showGallery, setShowGallery] = useState(false)
+    const [showGallery, setShowGallery] = useState(true)
 
     const infoRef = useRef(null)
     const locationRef = useRef(null)
@@ -36,7 +36,7 @@ function ComponentContainer2() {
         startRef.current.scrollIntoView({behavior: 'smooth'})
     }
 
-    const [visible, setVisible] = useState(true);
+    const [visible, setVisible] = useState(false);
 
     function detectMouseScrollUp(e) {
         setVisible(e.deltaY < 0);
