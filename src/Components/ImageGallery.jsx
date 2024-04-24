@@ -24,7 +24,7 @@ function ImageGallery({height}) {
 
   return (
     <Container className='galleryCont'  style={{height: height}}> 
-        <h2 className='galleryHeader'>Galerija:</h2>
+        {/**<h2 className='galleryHeader'>Galerija:</h2> */}
         <Box sx={{ width: '100%', height: '100%', overflowY: 'scroll', scrollbarWidth: 'none', '&::-webkit-scrollbar': { width: 0 }}}>
       <ImageList className='imageList' variant="masonry" cols={3} gap={8}>
         {images.map((item, index) => (
@@ -46,11 +46,12 @@ function ImageGallery({height}) {
         slides={images}
         index={index}
         plugins={[Zoom]}
+        animation={{ zoom: 500 }}
         zoom={{
           ref: zoomRef,
           maxZoomPixelRatio: 10,
             /** zoom-in multiplier */
-            zoomInMultiplier: 2,
+            zoomInMultiplier: 5,
             /** double-tap maximum time delay */
             doubleTapDelay: 300,
             /** double-click maximum time delay */

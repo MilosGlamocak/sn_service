@@ -2,8 +2,7 @@
 
 .galleryCont {
     max-width: 100% !important;
-    padding: 2rem 1rem 0rem 1rem !important;
-    margin-top: 5rem;
+    padding: 0 1rem 0rem 1rem !important;
     display: flex !important;
     flex-direction: column;
     align-items: center;

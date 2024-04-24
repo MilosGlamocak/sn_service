@@ -12,6 +12,8 @@ import ImageGallery from './ImageGallery';
 
 function ComponentContainer2() {
 
+    const [showGallery, setShowGallery] = useState(false)
+
     const infoRef = useRef(null)
     const locationRef = useRef(null)
     const contactRef = useRef(null)
@@ -34,7 +36,7 @@ function ComponentContainer2() {
         startRef.current.scrollIntoView({behavior: 'smooth'})
     }
 
-    const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(true);
 
     function detectMouseScrollUp(e) {
         setVisible(e.deltaY < 0);
@@ -53,7 +55,14 @@ function ComponentContainer2() {
         <Container className='componentContainer2' onWheel={detectMouseScrollUp}>
             <WelcomePage height='25%'/>
             <InfoPage height='20%' />
-            <ImageGallery height='20%'/>
+            {showGallery ?
+            (
+            <>
+            <Container className='showGalleryBtn' onClick={() => setShowGallery(false)}><h3 className='showGalleryBtnText'>Sakrij galeriju</h3></Container>
+            <ImageGallery height='17%'/>
+            </>) : 
+                <Container className='showGalleryBtn' onClick={() => setShowGallery(true)}><h3 className='showGalleryBtnText'>Prikaži galeriju</h3></Container>
+            }
             <Reviews height='15%'/>
             <Location height='18%'/>
             <Contact height='17%' /> 
